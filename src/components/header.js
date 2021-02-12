@@ -9,46 +9,38 @@ const ListLink = props => (
 
 
 const Header = ({ siteTitle }) => (
-  // <header
-  //   style={{
-  //     background: `#f9e64f`,
-  //     marginBottom: `1.45rem`,
-  //   }}
-  // >
-  //   <div
-  //     style={{
-  //       margin: `0 auto`,
-  //       maxWidth: 960,
-  //       padding: `1.45rem 1.0875rem`,
-  //     }}
-  //   >
-  //     <h1 style={{ margin: 0 }}>
-  //       <Link
-  //         to="/"
-  //         style={{
-  //           color: `black`,
-  //           textDecoration: `none`,
-  //         }}
-  //       >
-  //         {siteTitle}
-  //       </Link>
-  //     </h1>
-  //   </div>
-  // </header>
+  <header
+    style={{
+      background: `#f9e64f`,
+      marginBottom: `1.5rem`,
+    }}
+  >
+    <div
+      style={{
+        margin: `0 auto`,
+        maxWidth: 1100,
+        padding: `1.45rem 1.0875rem`,
+      }}
+    >
+      <h1 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `black`,
+            textDecoration: `none`,
+          }}
+        >
+          {siteTitle}
+        </Link>
 
-  <header style={{ marginBottom: `1.5rem` }}>
-    <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-      <h3 style={{ display: `inline` }}>MyWebSite</h3>
-    </Link>
-    <ul style={{ listStyle: `none`, float: `right` }}>
-      <ListLink to="/">Home</ListLink>
-      <ListLink to="/about/">About</ListLink>
-      <ListLink to="/contact/">Contact</ListLink>
-    </ul>
+        <ul style={{ listStyle: `none`, float: `right` }}>
+          <ListLink to="/">Home</ListLink>
+          <ListLink to="/about/">About</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
+        </ul>
+      </h1>
+    </div>
   </header>
-
-
-
 )
 
 Header.propTypes = {

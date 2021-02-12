@@ -27,9 +27,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Header siteTitle='Web Dev'>  </Header>
+      <div style={{ margin: `2rem auto`, maxWidth: 1100, padding: `0 1rem` }} >
 
-      <div style={{ margin: `2rem auto`, maxWidth: 650, padding: `0 1rem` }} >
-        <Header >  </Header>
         <main>{children}</main>
         <footer
           style={{
